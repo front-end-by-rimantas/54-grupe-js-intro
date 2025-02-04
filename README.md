@@ -8,25 +8,40 @@
 
 ### Kintamieji (variables)
 
+-   number
+-   string
+-   boolean
+-   array
+-   object
+
 ### Sąlygos (conditionals)
+
+-   if
+-   switch
+-   ternary
+-   boolean logika (and, or)
 
 ### Ciklai (loops)
 
+-   for
+-   for-of
+-   for-in
+-   while
+-   cikliski array metodai
+
 ### Funkcijos/klasės (functions, class'es)
 
-### Įvykiai (events, event listeners)
+-   function
+-   arrow function
+-   class (oop)
+-   number metodai
+-   string metodai
+-   array metodai
+-   object metodai
 
-**Labas** _rytas_, **_Lietuva_**!
+### Įvykiai, naršyklė (events, event listeners)
 
-> Text that is a quote
-
-Labas `rytas`, Lietuva!
-
-```js
-function sum(a, b) {
-    return a + b;
-}
-```
-
-HTML/CSS -> JS -> BACKEND
-JS -> HTML/CSS -> BACKEND
+-   DOM
+-   event listeners
+-   fetch
+-   localStorage
