@@ -199,3 +199,16 @@ console.log(apvalinimas(3.145, 2));
 console.log(apvalinimas(3.1499, 2));
 
 console.clear();
+
+let k = 10;
+
+console.log(k--);
+console.log(k--);
+console.log(k--);
+console.log(k--);
+console.log(k--);
+
+k = k + 1;
+k += 1;
+k++;
+++k;
