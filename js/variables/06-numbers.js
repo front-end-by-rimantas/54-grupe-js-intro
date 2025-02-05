@@ -172,3 +172,30 @@ for (let i = 0; i < 10; i++) {
 
 // pasidaryti savo func, kuri grazina skaiciu su ribotu kiekiu skaitmenu po kablelio
 // kas yra i++?
+// codewars
+
+console.clear();
+
+console.log((3.1415).toFixed());
+console.log((3.1415).toFixed(1));
+console.log((3.1415).toFixed(2));
+console.log((3.1415).toFixed(3));
+console.log((3.1415).toFixed(4));
+console.log((3.1415).toFixed(5));
+console.log((3.1415).toFixed(6));
+
+console.log((3.1).toFixed(2));
+console.log((3.145).toFixed(2));
+console.log((3.149999).toFixed(2));
+
+function apvalinimas(n, amount) {
+    return Math.round(n * (10 ** amount)) / (10 ** amount);
+}
+
+console.log(apvalinimas(10, 2));
+console.log(apvalinimas(9.5, 2));
+console.log(apvalinimas(3.1415, 2));
+console.log(apvalinimas(3.145, 2));
+console.log(apvalinimas(3.1499, 2));
+
+console.clear();
