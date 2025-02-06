@@ -4,6 +4,7 @@ STRING - tekstas - simboliu grandinele
 iniciavimas galimas:
 - ' (viengubomis kabutemis)
 - " (dvigubomis kabutemis)
+- ` (backtick'as)
 
 */
 
@@ -76,3 +77,68 @@ const html = '<div>\r\n\
 </div>';
 console.log(html);
 
+
+
+// Kabutes: ' (vienguba) ir " (dviguba).
+const k3 = 'Kabutes: \' (vienguba) ir " (dviguba).';
+console.log(k3);
+const k4 = "Kabutes: ' (vienguba) ir \" (dviguba).";
+console.log(k4);
+const k5 = "Kabutes: \' (vienguba) ir \" (dviguba).";
+console.log(k5);
+const k6 = 'Kabutes: \' (vienguba) ir \" (dviguba).';
+console.log(k6);
+
+console.clear();
+
+const b = `labas`;
+console.log(b);
+
+const bHtml = `<div>
+    <h1>Labas rytas, Lietuva!</h1>
+    <p>Pirmadienis.</p>
+    <p>Pomidoras.</p>
+</div>`;
+console.log(bHtml);
+
+// Kabute: ` (backtick).
+const backtickBedute1 = 'Kabute: `(backtick).';
+const backtickBedute2 = "Kabute: `(backtick).";
+const backtickBedute3 = `Kabute: \`(backtick).`;
+console.log(backtickBedute1);
+console.log(backtickBedute2);
+console.log(backtickBedute3);
+
+const luckyNumber = 13;
+
+// My lucky number is 13.
+const lucky = 'My lucky number is ' + luckyNumber + '.';
+console.log(lucky);
+
+const lucky2 = `My lucky number is ${luckyNumber}.`;
+console.log(lucky2);
+
+const chuckBack = `Hi, my name is ${firstname} and I am ${age} years old.`;
+console.log(chuckBack);
+
+// Price: $45.00
+const price = 45;
+const priceStr1 = 'Price: $${price}.00';
+console.log(priceStr1);
+const priceStr2 = "Price: $${price}.00";
+console.log(priceStr2);
+const priceStr3 = `Price: $${price}.00`;
+console.log(priceStr3);
+
+// C:\Documents\troliai\rekia\namie
+const troliai1 = 'C:\\Documents\\troliai\\rekia\\namie';
+console.log(troliai1);
+const troliai2 = "C:\\Documents\\troliai\\rekia\\namie";
+console.log(troliai2);
+const troliai3 = `C:\\Documents\\troliai\\rekia\\namie`;
+console.log(troliai3);
+
+// String.raw`C:\Documents\troliai\rekia\namie`;
+
+const broliai = `String.raw\`C:\\Documents\\troliai\\rekia\\namie\`;`;
+console.log(broliai);
