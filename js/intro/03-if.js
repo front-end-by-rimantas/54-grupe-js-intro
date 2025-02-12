@@ -288,3 +288,80 @@ switch (isDay) {
         break;
 }
 
+// UNARY (1)
+// BINARY (2)
+// TERNARY (3)
+
+const x = 5;
+
+const y = 2 + 2;
+
+let text = '';
+
+if (4 > 2) {
+    text = 'Taip';
+} else {
+    text = 'Ne';
+}
+
+console.log(text);
+
+const text2 = 4 > 2 ? 'Taip' : 'Ne';
+console.log(text2);
+
+const amziausRiba = 18;
+const jonoAmzius = 99;
+const jonas = jonoAmzius >= amziausRiba ? 'pilnametis' : 'nepilnametis';
+
+console.log(jonas);
+console.log(jonoAmzius >= amziausRiba ? 'pilnametis' : 'nepilnametis');
+
+
+
+console.clear();
+
+console.log(1 < 2 ? 3 : 4);
+console.log(2 > 3 ? 4 : 5 ? 6 : 7);
+console.log(2 < 3 ? 4 : 5 ? 6 : 7);
+console.log(1 < 2 ? 3 ? 4 : 5 : 6 ? 7 : 8);
+
+// visi skaiciai yra pozityvus (truthy)
+// 0 yra negatyvus (falsy)
+if (0) {
+    console.log('ok');
+} else {
+    console.log('not so ok');
+}
+
+console.log(1 ? 2 : 3);
+console.log(0 ? 2 : 3);
+console.log(5 < 6 ? 2 : 3);
+console.log(5 > 6 ? 2 : 3);
+
+// visi string yra pozityvus
+// isskyrus tuscia
+if ('') {
+    console.log('ok');
+} else {
+    console.log('not so ok');
+}
+
+const username = '';
+
+if (username) {
+    console.log('Labas', username, '!');
+} else {
+    console.log('Nenurodytas slapyvardis 🤖');
+}
+
+if (!username) {
+    console.log('Nenurodytas slapyvardis 🤖');
+} else {
+    console.log('Labas', username, '!');
+}
+
+
+console.clear();
+
+console.log(1 ? 2 ? 3 : 4 : 5 ? 6 : 7);
+console.log(0 ? 1 ? 2 : 3 : 4 ? 5 : 6);
