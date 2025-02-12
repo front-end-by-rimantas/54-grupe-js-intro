@@ -166,4 +166,125 @@ if (d4 >= 1 && d4 <= 5 && d4 % 1 === 0) {
     console.log('## tokia diena savaiteje neegzistuoja');
 }
 
-// switch...
+
+const d5 = 6;
+
+switch (d5) {
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+        console.log('darbo diena');
+        break;
+
+    case 6:
+    case 7:
+        console.log('savaitgalis');
+        break;
+
+    default:
+        console.log('tokia diena savaiteje neegzistuoja');
+        break;
+}
+
+/* 
+1. pasiimame puodeli
+2. arbatinukan ipalame vandens
+3. uzkaiciam
+4. i puodeli isidedam arbatos
+5. uzpilame karstu vandeniu
+*/
+console.clear();
+
+const teaStep = 'aciu';
+
+switch (teaStep) {
+    case 1:
+        console.log('pasiimame puodeli');
+    case 2:
+        console.log('arbatinukan ipalame vandens');
+    case 3:
+        console.log('uzkaiciam');
+    case 4:
+        console.log('i puodeli isidedam arbatos');
+    case 5:
+        console.log('uzpilame karstu vandeniu');
+    default:
+        console.log('labas');
+}
+
+const stop = 'Rudens 2';
+
+switch (stop) {
+    case 'Geniu 1':
+        console.log('🚌 Geniu');
+    case 'Tremtiniu 1':
+        console.log('🚌 Tremtiniu');
+    case 'Rudens 1':
+        console.log('🚌 Rudens');
+    case 'Mindaugo':
+        console.log('🚌 Mindaugo');
+    case 'Zaliasis tiltas':
+        console.log('🚌 Zaliasis tiltas');
+        break;
+
+    case 'Lvovo':
+        console.log('🚌 Lvovo');
+    case 'Vasara':
+        console.log('🚌 Vasara');
+    case 'Rudens 2':
+        console.log('🚌 Rudens');
+    case 'Tremtiniu 2':
+        console.log('🚌 Tremtiniu');
+    case 'Geniu 2':
+        console.log('🚌 Geniu');
+        break;
+}
+
+console.clear();
+
+const temp = 5;
+const isDay = false;
+
+if (temp > 18) {
+    switch (isDay) {
+        case true:
+            console.log('Silta diena 🌞');
+            break;
+
+        case false:
+            console.log('Silta naktis 🌛');
+            break;
+    }
+} else {
+    switch (isDay) {
+        case true:
+            console.log('Salta diena 🥶');
+            break;
+
+        case false:
+            console.log('Salta naktis 🌑');
+            break;
+    }
+}
+
+
+switch (isDay) {
+    case true:
+        if (temp > 18) {
+            console.log('Silta diena 🌞');
+        } else {
+            console.log('Silta naktis 🌛');
+        }
+        break;
+
+    case false:
+        if (temp > 18) {
+            console.log('Salta diena 🥶');
+        } else {
+            console.log('Salta naktis 🌑');
+        }
+        break;
+}
+
