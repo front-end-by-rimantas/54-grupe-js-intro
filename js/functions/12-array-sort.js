@@ -37,24 +37,5 @@ const students = [
     { name: 'Ona', age: 66, isMarried: true },
 ];
 
-console.clear();
-
-const jonas = {
-    name: 'Jonas',
-    age: 99,
-    isMarried: true
-};
-console.log(jonas);
-
-console.log(jonas.name);
-console.log(jonas.age);
-console.log(jonas.isMarried);
-
-console.log(jonas['name']);
-console.log(jonas['age']);
-console.log(jonas['isMarried']);
-
-
-
 
 // reference
