@@ -34,7 +34,8 @@ const crazy = {
     title: 'pavadinimas....',
     isMarried: true,
     '7': 'septyni',
-    'atskiri zodziai': 'daug atskiru zodziu'
+    'atskiri zodziai': 'daug atskiru zodziu',
+    new: 'Kazkas naujo',
 };
 
 console.log(crazy);
