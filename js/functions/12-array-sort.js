@@ -30,12 +30,27 @@ console.log(list);
 list.sort((a, b) => b.length - a.length);
 console.log(list);
 
+console.clear();
+
 const students = [
     { name: 'Jonas', age: 99, isMarried: true },
     { name: 'Maryte', age: 88, isMarried: false },
-    { name: 'Petras', age: 77, isMarried: false },
     { name: 'Ona', age: 66, isMarried: true },
+    { name: 'Petras', age: 77, isMarried: false },
 ];
+console.log(students);
+
+students.sort((a, b) => a.age - b.age);
+console.log(students);
+
+students.sort((a, b) => b.age - a.age);
+console.log(students);
+
+students.sort((a, b) => b.name.length - a.name.length);
+console.log(students);
+
+students.sort((a, b) => a.name.length - b.name.length);
+console.log(students);
 
 
 // reference
