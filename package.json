@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "spread": "node --watch js/functions/15-spread.js",
         "ref": "node --watch js/variables/14-ref.js",
         "simas": "node --watch js/extra/simas.js",
         "object": "node --watch js/variables/13-object.js",
