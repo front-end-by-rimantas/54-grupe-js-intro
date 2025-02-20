@@ -76,3 +76,4 @@ const objD = {
     ...objD1,
 };
 console.log(objD);
+
