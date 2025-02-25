@@ -4,9 +4,13 @@ function skaitmenuKiekisSkaiciuje(n) {
         return 'Pateikta netinkamo tipo reikšmė.';
     }
 
-    if (isNaN(n) || n === Infinity || n === -Infinity) {
+    if (!isFinite(n)) {
         return 'Pateiktas netinka skaičiaus tipo reikšmė.';
     }
+    // alternatyva !isFinite(n)
+    // if (isNaN(n) || n === Infinity || n === -Infinity) {
+    //     return 'Pateiktas netinka skaičiaus tipo reikšmė.';
+    // }
 
     // logika
     let result = ('' + n).length;
