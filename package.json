@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "mini:letters": "node --watch js/extra/mini-letters.js",
         "mini:max": "node --watch js/extra/mini-max.js",
         "mini:digits": "node --watch js/extra/mini-digits.js",
         "mini": "node --watch js/extra/mini.js",
