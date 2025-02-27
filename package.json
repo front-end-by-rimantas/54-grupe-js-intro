@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "oop": "node --watch js/oop/oop.js",
         "mini:count": "node --watch js/extra/mini-count.js",
         "sum": "node --watch js/extra/sum.js",
         "mini:letters": "node --watch js/extra/mini-letters.js",
