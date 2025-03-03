@@ -25,6 +25,7 @@ class Student {
         }
 
         this.marks.push(mark);
+        return `Pazymys (${mark}) sekmingai pridetas`;
     }
 
     calcMarksAverage() {
@@ -47,7 +48,7 @@ const jonas = new Student('Jonas', 99);
 console.log(jonas.calcMarksAverage());
 // jonas.birthday();
 // console.log(jonas.hi());
-jonas.setMark(10);
+console.log(jonas.setMark(10));
 console.log(jonas.calcMarksAverage());
-jonas.setMark(4);
+console.log(jonas.setMark(4));
 console.log(jonas.calcMarksAverage());
