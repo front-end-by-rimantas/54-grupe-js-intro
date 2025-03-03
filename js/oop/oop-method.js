@@ -14,15 +14,40 @@ class Student {
     hi() {
         return `${this.name} sako: labas!!!`;
     }
+
+    setMark(mark) {
+        if (typeof mark !== 'number'
+            || !isFinite(mark)
+            || mark <= 0
+            || mark > 10
+            || !Number.isInteger(mark)) {
+            return 'Pazymys turi buti teigiamas sveikasis skaicius intervale tarp 1 ir 10';
+        }
+
+        this.marks.push(mark);
+    }
+
+    calcMarksAverage() {
+        if (this.marks.length === 0) {
+            return `${this.name} neturi pazymiu, del to pazymiu vidurkis negali buti skaiciuojamas`;
+        }
+
+        let sum = 0;
+
+        for (const mark of this.marks) {
+            sum += mark;
+        }
+
+        return sum / this.marks.length;
+    }
 }
 
 const jonas = new Student('Jonas', 99);
-const maryte = new Student('Maryte', 88);
 
-jonas.birthday();
-maryte.birthday();
-
-// Maryte sake: labas!!!
-console.log(maryte.hi());
-console.log(jonas.hi());
-
+console.log(jonas.calcMarksAverage());
+// jonas.birthday();
+// console.log(jonas.hi());
+jonas.setMark(10);
+console.log(jonas.calcMarksAverage());
+jonas.setMark(4);
+console.log(jonas.calcMarksAverage());
